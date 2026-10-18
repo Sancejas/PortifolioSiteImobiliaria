@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EstatePro - Empreendimentos e Imóveis de Alto Padrão. Encontre mansões, coberturas e apartamentos de luxo nas localizações mais nobres.">
+  <meta name="keywords" content="imobiliária, imóveis de luxo, apartamentos alto padrão, mansões alphaville, coberturas jardins, lançamentos imobiliários">
+  <meta property="og:title" content="EstatePro - Encontre o Imóvel dos Seus Sonhos">
+  <meta property="og:description" content="Descubra empreendimentos de alto padrão nas melhores localizações. Arquitetura moderna, conforto e valorização garantida.">
+  <meta property="og:type" content="website">
+  
+  <title>EstatePro | Encontre o Imóvel dos Seus Sonhos</title>
+
+  <!-- Favicon com SVG inline -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23DFA135'><path d='M12 3L2 12h3v8h14v-8h3L12 3z'/></svg>">
+
+  <!-- Estilos Globais -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Barra de Navegação
+       ======================================================================== -->
+
+  <header class="site-header" id="header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Navegação Principal">
+        
+        <!-- Logotipo EstatePro -->
+        <a href="#inicio" class="brand-logo" aria-label="EstatePro Home">
+          <div class="brand-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 10.5L12 3l9 7.5V20a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 13 20v-5h-2v5a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 3 20v-9.5z"/>
+            </svg>
+          </div>
+          <div class="brand-text-group">
+            <span class="brand-name">Estate<span>Pro</span></span>
+            <span class="brand-tagline">Encontre. Invista. Viva Melhor.</span>
+          </div>
+        </a>
+
+        <!-- Menu Desktop -->
+        <ul class="nav-menu" id="nav-menu">
+          <!-- Botão fechar (visível apenas no mobile) -->
+          <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Fechar Menu">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#categorias" class="nav-link">Categorias</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#empreendimentos" class="nav-link">Empreendimentos</a></li>
+          <li><a href="#simulador" class="nav-link">Simulador</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+
+        <!-- Ações do Topo -->
+        <div class="nav-actions">
+          <!-- Botão de Favoritos Salvos -->
+          <button class="btn-icon-circle" id="favorites-btn" title="Meus Imóveis Salvos" aria-label="Favoritos">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            <span class="badge-counter" id="favorites-count-badge" style="display: none;">0</span>
+          </button>
+
+          <!-- CTA Começar / Fale Conosco -->
+          <a href="#contato" class="btn-primary-pill">
+            <span>Contato</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <!-- Botão Hambúrguer Mobile -->
+          <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         Hero Section (Viver com Exclusividade / Encontre o Imóvel dos Sonhos)
+         ====================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Lado Esquerdo: Conteúdo Principal do Hero -->
+          <div class="hero-content">
+            
+            <div class="hero-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <span>Viva Com Exclusividade</span>
+            </div>
+
+            <h1 class="hero-title">
+              Encontre o Imóvel<br>
+              <span class="highlight-gold">dos Seus Sonhos</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Descubra os empreendimentos mais desejados nas melhores localizações. 
+              Arquitetura de vanguarda, segurança absoluta e um padrão de vida incomparável para você e sua família.
+            </p>
+
+            <!-- Barra de Busca Rápida -->
+            <div class="hero-search-box">
+              <div class="search-input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                <input type="text" id="hero-search-input" placeholder="Digite a localização (ex: Jardins, Alphaville, Barra, Balneário)..." aria-label="Buscar imóveis">
+              </div>
+              <button class="btn-search-hero" id="hero-search-btn" aria-label="Buscar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              </button>
+            </div>
+
+            <!-- Tags Populares -->
+            <div class="popular-tags">
+              <span>Em alta:</span>
+              <a href="#" class="tag-pill" data-query="Alphaville">Alphaville</a>
+              <a href="#" class="tag-pill" data-query="Jardins">Jardins</a>
+              <a href="#" class="tag-pill" data-query="Itaim Bibi">Itaim Bibi</a>
+              <a href="#" class="tag-pill" data-query="Leblon">Leblon</a>
+              <a href="#" class="tag-pill" data-query="Balneário Camboriú">Balneário Camboriú</a>
+            </div>
+
+            <!-- Estatísticas / Indicadores de Confiança -->
+            <div class="hero-metrics-bar">
+              <div class="metric-item">
+                <div class="metric-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                </div>
+                <div class="metric-data">
+                  <h4>1.200+</h4>
+                  <p>Imóveis Ativos</p>
+                </div>
+              </div>
+
+              <div class="metric-item">
+                <div class="metric-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="metric-data">
+                  <h4>850+</h4>
+                  <p>Famílias Felizes</p>
+                </div>
+              </div>
+
+              <div class="metric-item">
+                <div class="metric-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div class="metric-data">
+                  <h4>4.9/5</h4>
+                  <p>Avaliação Média</p>
+                </div>
+              </div>
+
+              <div class="metric-item">
+                <div class="metric-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="metric-data">
+                  <h4>100%</h4>
+                  <p>Processo Seguro</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Lado Direito: Card Flutuante "Mais que Imóveis" -->
+          <div class="hero-floating-card-wrap">
+            <div class="floating-glass-card">
+              <div class="floating-card-serif">Mais que Imóveis</div>
+              <h3 class="floating-card-title">Um Novo Estilo de Vida</h3>
+              <p class="floating-card-text">
+                Experiências arquitetônicas únicas projetadas para proporcionar harmonia, bem-estar e sofisticação em cada detalhe do seu dia.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Seção: Categorias de Imóveis (Fundo Claro Sofisticado)
+         ====================================================================== -->
+    <section class="categories-section" id="categorias">
+      <div class="container">
+        
+        <div class="section-head-split">
+          <div>
+            <span class="section-pretitle">EXPLORE POR CATEGORIA</span>
+            <h2 class="section-title">Imóveis que Combinam com Seu Estilo</h2>
+            <p class="section-subtitle">Descubra uma ampla variedade de opções pensadas para o seu momento de vida</p>
+          </div>
+          <a href="#empreendimentos" class="section-link-all">
+            <span>Ver Todas as Categorias</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Grid Dinâmico das 4 Categorias -->
+        <div class="categories-grid" id="categories-grid">
+          <!-- Inserido dinamicamente via JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Seção: Por Que Escolher a EstatePro (Dark Panorama)
+         ====================================================================== -->
+    <section class="why-us-section" id="sobre">
+      <div class="container">
+        <div class="why-us-grid">
+          
+          <!-- Texto Institucional -->
+          <div class="why-us-content">
+            <span class="section-pretitle">POR QUE ESCOLHER A ESTATEPRO</span>
+            <h2 class="section-title">Seu Parceiro Imobiliário de Confiança</h2>
+            <p class="why-us-desc">
+              Com mais de uma década de liderança no mercado imobiliário de alto padrão, nós oferecemos assessoria jurídica completa, portfólio selecionado a dedo e atendimento sigiloso para garantir a melhor decisão patrimonial.
+            </p>
+            <a href="#contato" class="btn-primary-pill">
+              <span>Saiba Mais Sobre Nós</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- Cards de Diferenciais Glassmorphism com Efeito Scroll Reveal Alternado -->
+          <div class="why-features-grid">
+            
+            <!-- 1º Card: Entra pela Esquerda -->
+            <div class="feature-glass-card scroll-reveal-left" data-scroll="left">
+              <div class="feature-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <div class="feature-text">
+                <h4>Imóveis Auditados</h4>
+                <p>100% de documentação jurídica e procedência rigorosamente verificadas.</p>
+              </div>
+            </div>
+
+            <!-- 2º Card: Entra pela Direita -->
+            <div class="feature-glass-card scroll-reveal-right" data-scroll="right">
+              <div class="feature-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div class="feature-text">
+                <h4>Consultoria Especializada</h4>
+                <p>Equipe de corretores experientes do primeiro contato até as chaves.</p>
+              </div>
+            </div>
+
+            <!-- 3º Card: Entra pela Esquerda -->
+            <div class="feature-glass-card scroll-reveal-left" data-scroll="left">
+              <div class="feature-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="feature-text">
+                <h4>Melhores Localizações</h4>
+                <p>Presença consolidada nas regiões mais nobres e de maior valorização.</p>
+              </div>
+            </div>
+
+            <!-- 4º Card: Entra pela Direita -->
+            <div class="feature-glass-card scroll-reveal-right" data-scroll="right">
+              <div class="feature-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+              </div>
+              <div class="feature-text">
+                <h4>Suporte Pós-Venda</h4>
+                <p>Acompanhamento contínuo mesmo após a assinatura da escritura.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Seção: Vitrine de Empreendimentos (Featured Listings)
+         ====================================================================== -->
+    <section class="featured-section" id="empreendimentos">
+      <div class="container">
+        
+        <div class="section-head-split">
+          <div>
+            <span class="section-pretitle">EMPREENDIMENTOS SELECIONADOS</span>
+            <h2 class="section-title">Escolhas Exclusivas Para Você</h2>
+            <p class="section-subtitle">Imóveis prontos para morar e lançamentos de alto padrão com condições diferenciadas</p>
+          </div>
+          <a href="#simulador" class="section-link-all">
+            <span>Simular Financiamento</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Abas de Filtros Rápidos -->
+        <div class="filter-tabs-wrapper">
+          <div class="filter-tab-buttons">
+            <button class="tab-btn active" data-filter="all">Todos os Imóveis</button>
+            <button class="tab-btn" data-filter="sale">Para Venda</button>
+            <button class="tab-btn" data-filter="rent">Para Locação</button>
+            <button class="tab-btn" data-filter="launch">Lançamentos</button>
+          </div>
+          <div class="filter-stats-indicator" id="filter-results-count">
+            Mostrando <strong>8</strong> de 8 imóveis
+          </div>
+        </div>
+
+        <!-- Grid de Cards de Imóveis -->
+        <div class="properties-grid" id="properties-grid">
+          <!-- Inserido dinamicamente via JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Simulador de Financiamento & Aquisição
+         ====================================================================== -->
+    <section class="mortgage-section" id="simulador">
+      <div class="container">
+        
+        <div class="mortgage-card-container">
+          
+          <!-- Lado do Formulário de Simulação -->
+          <div class="mortgage-form-side">
+            <span class="section-pretitle">PLANEJAMENTO PATRIMONIAL</span>
+            <h3>Simulador de Financiamento</h3>
+            <p>Calcule estimativas de parcelas e planeje a aquisição do seu próximo imóvel com facilidade.</p>
+
+            <!-- Slider 1: Valor do Imóvel -->
+            <div class="input-slider-group">
+              <div class="slider-label-row">
+                <span>Valor do Imóvel</span>
+                <span class="slider-value-display" id="mortgage-val-disp">R$ 5.000.000</span>
+              </div>
+              <input type="range" id="mortgage-val" min="500000" max="15000000" step="100000" value="5000000">
+            </div>
+
+            <!-- Slider 2: Valor da Entrada -->
+            <div class="input-slider-group">
+              <div class="slider-label-row">
+                <span>Entrada</span>
+                <span class="slider-value-display" id="mortgage-down-disp">20% (R$ 1.000.000)</span>
+              </div>
+              <input type="range" id="mortgage-down" min="10" max="60" step="5" value="20">
+            </div>
+
+            <!-- Slider 3: Prazo em Anos -->
+            <div class="input-slider-group">
+              <div class="slider-label-row">
+                <span>Prazo de Pagamento</span>
+                <span class="slider-value-display" id="mortgage-term-disp">30 anos (360 meses)</span>
+              </div>
+              <input type="range" id="mortgage-term" min="5" max="35" step="1" value="30">
+            </div>
+
+            <!-- Slider 4: Taxa de Juros Anual Estimada -->
+            <div class="input-slider-group">
+              <div class="slider-label-row">
+                <span>Taxa Estimada (a.a.)</span>
+                <span class="slider-value-display" id="mortgage-rate-disp">9.8% ao ano</span>
+              </div>
+              <input type="range" id="mortgage-rate" min="7.5" max="14.0" step="0.1" value="9.8">
+            </div>
+          </div>
+
+          <!-- Lado dos Resultados -->
+          <div class="mortgage-result-side">
+            <div class="result-card-inner">
+              <span class="result-badge">Estimativa da 1ª Parcela</span>
+              <div class="result-main-value" id="mortgage-installment-res">R$ 34.500</div>
+              <div class="result-subtext">Cálculo estimado via Tabela Price / SAC sujeito à análise bancária</div>
+
+              <div class="result-breakdown-list">
+                <div class="breakdown-row">
+                  <span>Valor de Entrada:</span>
+                  <span id="mortgage-down-res">R$ 1.000.000</span>
+                </div>
+                <div class="breakdown-row">
+                  <span>Valor Financiado:</span>
+                  <span id="mortgage-financed-res">R$ 4.000.000</span>
+                </div>
+                <div class="breakdown-row">
+                  <span>Instituições Parceiras:</span>
+                  <span>Itaú, Bradesco, Santander, Caixa</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://wa.me/5511999998888?text=Ol%C3%A1!%20Fiz%20uma%20simula%C3%A7%C3%A3o%20de%20financiamento%20no%20site%20da%20EstatePro%20e%20gostaria%20de%20uma%20an%C3%A1lise%20completa." target="_blank" rel="noopener noreferrer" class="btn-primary-pill" style="justify-content: center;">
+              <span>Solicitar Análise de Crédito</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Barra de Contato Flutuante Compacta (50% menor e não-intrusiva)
+         ====================================================================== -->
+    <div class="floating-cta-section" id="contato">
+      <div class="container">
+        <div class="cta-banner-card" id="cta-banner-bar">
+          
+          <div class="cta-lead-info">
+            <div class="cta-headset-bubble">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+              </svg>
+            </div>
+            <div class="cta-lead-text">
+              <h3>Precisa de ajuda para escolher?</h3>
+              <p>Fale com um consultor especialista agora mesmo</p>
+            </div>
+          </div>
+
+          <div class="cta-buttons-wrap">
+            <a href="https://wa.me/5511999998888?text=Ol%C3%A1!%20Gostaria%20de%20ajuda%20para%20encontrar%20um%20im%C3%B3vel%20ideal." target="_blank" rel="noopener noreferrer" class="btn-cta-whatsapp">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+
+            <a href="tel:+5511999998888" class="btn-cta-call">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Ligar</span>
+            </a>
+
+            <button class="btn-cta-dismiss" id="btn-cta-dismiss" title="Ocultar aviso" aria-label="Ocultar aviso">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Rodapé Completo (Footer)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <div class="footer-col-brand">
+          <a href="#inicio" class="brand-logo">
+            <div class="brand-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M3 10.5L12 3l9 7.5V20a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 13 20v-5h-2v5a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 3 20v-9.5z"/>
+              </svg>
+            </div>
+            <div class="brand-text-group">
+              <span class="brand-name">Estate<span>Pro</span></span>
+              <span class="brand-tagline">Encontre. Invista. Viva Melhor.</span>
+            </div>
+          </a>
+          <p>
+            Referência na intermediação de imóveis de alto luxo e grandes empreendimentos residenciais e corporativos no Brasil e no exterior.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-circle-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-circle-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-circle-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links-list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#categorias">Categorias</a></li>
+            <li><a href="#sobre">Sobre a Imobiliária</a></li>
+            <li><a href="#empreendimentos">Empreendimentos</a></li>
+            <li><a href="#simulador">Simulador Financeiro</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tipos de Imóveis</h4>
+          <ul class="footer-links-list">
+            <li><a href="#empreendimentos">Mansões em Condomínio</a></li>
+            <li><a href="#empreendimentos">Coberturas Duplex</a></li>
+            <li><a href="#empreendimentos">Residências Pé na Areia</a></li>
+            <li><a href="#empreendimentos">Lajes Corporativas</a></li>
+            <li><a href="#empreendimentos">Lançamentos na Planta</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter-wrap">
+          <h4>Receba Oportunidades</h4>
+          <p>Cadastre seu e-mail para receber imóveis exclusivos antes do lançamento no mercado.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Inscrição confirmada com sucesso! Você receberá nosso catálogo de oportunidades.');">
+            <input type="email" placeholder="Seu melhor e-mail" required>
+            <button type="submit">Assinar</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 EstatePro Brasil. Todos os direitos reservados. CRECI/SP nº 45.892-J.
+        </div>
+        <div>
+          <span>Política de Privacidade</span> • <span>Termos de Uso</span> • <span>Código de Ética</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Modal Interativo de Detalhes do Imóvel
+       ======================================================================== -->
+  <div class="modal-overlay" id="property-modal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Fechar modal">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div id="modal-body">
+        <!-- Preenchido dinamicamente via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Drawer Lateral de Imóveis Salvos (Favoritos)
+       ======================================================================== -->
+  <aside class="favorites-drawer" id="favorites-drawer" aria-label="Imóveis Favoritos">
+    <div class="drawer-header">
+      <h3>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#EF4444" stroke="#EF4444" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span>Meus Favoritos</span>
+      </h3>
+      <button class="drawer-close-btn" id="drawer-close-btn" style="color: #64748B; padding: 0.5rem;" aria-label="Fechar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body" id="drawer-body">
+      <!-- Inserido dinamicamente via JS -->
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       Toast Notification para feedback ao usuário
+       ======================================================================== -->
+  <div class="toast-box" id="toast" role="status" aria-live="polite">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DFA135" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+    <span class="toast-message">Operação realizada com sucesso!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/properties-data.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
